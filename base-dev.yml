@@ -1,0 +1,23 @@
+﻿eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.2.232:6868/eureka/
+  instance:
+    prefer-ip-address: true
+ip: 127.0.0.2222
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-base
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://192.168.2.232:3310/tensquare_base?characterEncoding=utf-8
+    username: root
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+  rabbitmq:
+    host: 192.168.2.232
